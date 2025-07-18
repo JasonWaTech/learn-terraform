@@ -10,14 +10,6 @@ terraform {
 }
 
 
-locals {
-  # Common tags to be assigned to all resources
-  common_tags = {
-    Service = local.service_name
-    Owner   = local.owner
-  }
-}
-
 #
 # Resources go here
 #
@@ -27,10 +19,6 @@ resource {
     location = "westus2"
   }
 
-  azurerm_virtual_network "example" {
-    name                = "example-vnet"
-    address_space       = ["
-}
 
 # # Reference modules here
 # #

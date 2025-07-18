@@ -6,6 +6,6 @@ locals {
     Owner         = "Chris Craig"
     Service       = "WaTech NSD CGN Lab"
   }
-  vpc_endpoint_service = "com.amazonaws.vpce.us-west-2.vpce-svc-0a45a9c8516790cd2"
+  tenant_id = "11d0e217-264e-400a-8ba0-57dcc127d72d"
 
 }
