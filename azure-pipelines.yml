@@ -12,6 +12,8 @@ steps:
   inputs:
     terraformVersion: $(TF_VERSION)
 
+
+
 # ✅ Authenticate to Azure using the service connection
 - task: AzureCLI@2
   inputs:
