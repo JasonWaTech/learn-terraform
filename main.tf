@@ -23,8 +23,7 @@ provider "azurerm" {
 # Resources go here
 #
 
-resource {
-  azurerm_resource_group "jason-rg" {
+resource "azurerm_resource_group" "jason-rg" {
     name     = "var.default_rg_name"
     location = "westus2"
   }
