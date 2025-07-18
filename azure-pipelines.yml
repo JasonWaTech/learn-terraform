@@ -6,22 +6,17 @@ pool:
 
 variables:
   TF_VERSION: '1.6.0'
+  CLIENT_ID: $(CLIENT_ID)
+  CLIENT_SECRET: $(CLIENT_SECRET)
+  SUBSCRIPTION_ID: $(SUBSCRIPTION_ID)
+  TENANT_ID: $(TENANT_ID)
 
 steps:
 - task: TerraformInstaller@1
   inputs:
     terraformVersion: $(TF_VERSION)
 
-variables:
-  CLIENT_ID: '$(CLIENT_ID)'
-  CLIENT_SECRET: '$(CLIENT_SECRET)'
-  SUBSCRIPTION_ID: '$(SUBSCRIPTION_ID)'
-  TENANT_ID: '$(TENANT_ID)'
 
-
-
-
-# ✅ Authenticate to Azure using the service connection
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'WaTech-AID-IAC-Project'  # Service connection name
