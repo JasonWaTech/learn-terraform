@@ -15,7 +15,7 @@ steps:
 # ✅ Authenticate to Azure using the service connection
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'jason-sc'  # Replace with your actual service connection name if necessary
+    azureSubscription: 'WaTech-AID-IAC-Project'  # Service connection name
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
