@@ -15,5 +15,9 @@ variable "location" {
 variable "resource_group_name" {
   description = "Name of the Azure Resource Group"
   type        = string
-  default     = "watech-aid-jason-sandbox-rg"
+}
+
+variable "default_rg_name" {
+  description = "Default Resource Group Name"
+  type        = string
 }

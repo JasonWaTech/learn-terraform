@@ -25,7 +25,7 @@ provider "azurerm" {
 
 resource {
   azurerm_resource_group "jason-rg" {
-    name     = "watech-rg-"
+    name     = "var.default_rg_name"
     location = "westus2"
   }
 
