@@ -1,7 +1,19 @@
-variable "var_name" {
-  description = "Description of the variable"
+variable "tenant_id" {
+  description = "WA State EntraID Tenant ID"
   type        = string
-  default     = "default_value"
+  default     = "11d0e217-264e-400a-8ba0-57dcc127d72d"
+}
+
+variable "resource_group_namelocation" {
+  description = "Name of the Azure Resource Group"
+  type        = string
+
+}
+
+variable "location" {
+  description = "Azure region for resources"
+  type        = string
+  default     = "westus2"
 }
 
 
